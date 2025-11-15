@@ -2,7 +2,7 @@ pipeline {
     agent any
 
     tools {
-        jdk 'jdk21'
+        jdk 'jdk17'
         maven 'maven-3.9'
     }
 
@@ -28,7 +28,7 @@ pipeline {
 
         stage('Deploy with Docker Compose') {
             steps {
-                sh 'docker compose down'
+                sh 'docker compose down || true'
                 sh 'docker compose up -d --build'
             }
         }
