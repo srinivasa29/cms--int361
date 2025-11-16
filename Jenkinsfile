@@ -10,7 +10,9 @@ pipeline {
 
         stage('Clone Repository') {
             steps {
-                git credentialsId: 'github-cred', url: 'https://github.com/srinivasa29/cms--int361.git', branch: 'main'
+                git credentialsId: 'github-cred',
+                    url: 'https://github.com/srinivasa29/cms--int361.git',
+                    branch: 'main'
             }
         }
 
@@ -28,8 +30,13 @@ pipeline {
 
         stage('Deploy with Docker Compose') {
             steps {
-                sh 'docker compose down || true'
-                sh 'docker compose up -d --build'
+                sh '''
+                    docker rm -f smartcontactcrm || true
+                    docker rm -f smartcrm-mysql || true
+
+                    docker compose down || true
+                    docker compose up -d --build
+                '''
             }
         }
     }
