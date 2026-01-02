@@ -4,7 +4,8 @@ import com.smartcontact.model.User;
 import com.smartcontact.repository.UserRepository;
 import org.springframework.security.core.userdetails.*;
 import org.springframework.stereotype.Service;
-
+import org.springframework.context.annotation.Profile;
+@Profile("!render") 
 @Service
 public class CustomUserDetailsService implements UserDetailsService {
 
