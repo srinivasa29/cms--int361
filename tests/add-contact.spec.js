@@ -28,3 +28,4 @@ test('Add new contact successfully', async ({ page }) => {
   // 7. Verify contact added
   await expect(page.locator('text=Automation User')).toBeVisible();
 });
+ 
