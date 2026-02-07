@@ -1,16 +1,37 @@
-📘 SmartContact CRM – Contact Management System
+ SmartContact CRM – Contact Management System
 
 A full-stack Spring Boot + MySQL CRM application with secure authentication and contact management features.
 
-🚀 Overview
+ Overview
 
 SmartContact CRM is a modern, secure, and user-friendly contact management system built using Spring Boot, Spring Security, Thymeleaf, and MySQL.
 It allows users to register, log in, store contacts, upload images, and manage them easily from a mobile-friendly dashboard.
 
 This project also supports CI/CD with Jenkins, Docker-based deployment, and GitHub integration.
 
-✨ Features
-🔐 User Authentication
+AI / Generative AI (Future Enhancement Scope)
+
+SmartContact CRM is currently a rule-based full stack application.
+However, the system architecture is designed to support future integration of Generative AI and LLM-based features.
+
+Planned AI-driven enhancements include:
+
+AI-based contact note summarization
+Automatically generate short summaries from long contact descriptions using LLMs.
+
+Smart contact categorization
+Use NLP techniques to auto-tag contacts (e.g., work, personal, client, vendor) based on stored text data.
+
+Intelligent search & recommendations
+Enhance search using semantic matching instead of exact keywords, inspired by LLM behavior.
+
+AI-assisted insights
+Generate insights such as frequently contacted users or suggested follow-ups based on interaction patterns.
+
+These enhancements will be implemented using LLM APIs or open-source NLP models in future versions, while keeping the existing Spring Boot backend intact
+
+ Features
+ User Authentication
 
 User Registration & Login
 
@@ -20,7 +41,7 @@ Role-based access control
 
 Session management & logout support
 
-📇 Contact Management
+ Contact Management
 
 Add, Update, Delete contacts
 
@@ -32,7 +53,7 @@ Search and sort contacts
 
 Pagination support
 
-👤 User Dashboard
+ User Dashboard
 
 Personalized dashboard for each user
 
@@ -40,11 +61,11 @@ View total contacts
 
 Update profile & settings
 
-☁️ Cloud / Local Storage
+ Cloud / Local Storage
 
 Store images locally or configure cloud storage (AWS S3, Cloudinary)
 
-🧰 Admin Features (Optional)
+ Admin Features (Optional)
 
 View all users
 
@@ -52,7 +73,7 @@ Delete users
 
 Manage global data
 
-🏗️ Tech Stack
+ Tech Stack
 Layer	Technology
 Backend	Spring Boot (3.x)
 Security	Spring Security + BCrypt
@@ -63,7 +84,7 @@ Build Tool	Maven
 CI/CD	Jenkins
 Containerization	Docker, Docker Compose
 Version Control	Git + GitHub
-🧩 Project Architecture
+ Project Architecture
 SmartContactCRM/
 │
 ├── src/main/java/com/smartcontact/
@@ -80,12 +101,12 @@ SmartContactCRM/
 │
 └── pom.xml               → Maven configuration
 
-⚙️ Local Setup Instructions
-1️⃣ Clone Repository
+ Local Setup Instructions
+1️ Clone Repository
 git clone https://github.com/your_username/SmartContactCRM.git
 cd SmartContactCRM
 
-2️⃣ Configure MySQL Database
+2️ Configure MySQL Database
 
 Create database:
 
@@ -100,7 +121,7 @@ spring.datasource.password=YOUR_PASSWORD
 spring.jpa.hibernate.ddl-auto=update
 spring.jpa.show-sql=true
 
-3️⃣ Run Application
+3️ Run Application
 
 Using Maven Wrapper:
 
@@ -116,17 +137,17 @@ Application is available at:
 
 http://localhost:8080
 
-🐳 Docker Setup
-1️⃣ Build Docker Image
+ Docker Setup
+1️ Build Docker Image
 docker build -t smartcontact-app .
 
-2️⃣ Run Container
+2️ Run Container
 docker run -p 8080:8080 smartcontact-app
 
-3️⃣ Docker Compose
+3️ Docker Compose
 docker-compose up -d
 
-🔁 CI/CD Pipeline (Jenkins)
+CI/CD Pipeline (Jenkins)
 
 This project includes a complete CI/CD pipeline:
 
@@ -140,7 +161,7 @@ Pipeline uses:
 
 Jenkinsfile
 
-📸 Screenshots (Optional)
+ Screenshots (Optional)
 
 You can add:
 
@@ -154,7 +175,7 @@ Add Contact
 
 Profile Page
 
-📦 Folder Structure (Short View)
+ Folder Structure (Short View)
 SmartContactCRM/
 ├── src/
 ├── target/
@@ -163,7 +184,7 @@ SmartContactCRM/
 ├── Jenkinsfile
 └── README.md
 
-🙌 Contributing
+ Contributing
 
 Fork the project
 
@@ -173,13 +194,14 @@ Commit changes
 
 Push & Open a Pull Request
 
-📄 License
+ License
 
 This project is licensed under the MIT License.
 
-💬 Contact
+ Contact
 
 Mannepula Srinivasa
-📧 Email: your-email@example.com
+ Email: srinivasamannepula7@gmail.com
 
-🌐 GitHub: https://github.com/srinivasa29
+ GitHub: https://github.com/srinivasa29
+
